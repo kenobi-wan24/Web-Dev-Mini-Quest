@@ -1,0 +1,57 @@
+        body {
+            background: linear-gradient(135deg, #547792 0%, #F6E7BC 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        
+        .card {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        .btn {
+            border-radius: 8px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+        
+        .badge {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        
+        .door-btn {
+            width: 100%;
+            height: 100px;
+            border-radius: 8px;
+            border: 2px solid #dee2e6;
+            background: white;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .door-btn:hover {
+            border-color: #0d6efd;
+            background: #f8f9fa;
+            transform: translateY(-2px);
+        }
+        
+        .door-icon {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .alert {
+            border-radius: 8px;
+            border: none;
+        }

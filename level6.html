@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 6 - Conditionals</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="level6.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card" style="max-width: 520px; width: 100%;">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <span class="badge bg-danger">Level 6</span>
+                    <small class="text-secondary">Conditionals</small>
+                </div>
+                
+                <h4 class="mb-3">Choose Your Door</h4>
+                <p class="text-secondary mb-4">
+                    One door leads to victory. Use if/else logic to find the right one.
+                </p>
+                
+                <div class="row g-3 mb-4">
+                    <div class="col-4">
+                        <button class="door-btn" onclick="checkDoor(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="door-icon" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                            </svg>
+                            <small>Door 1</small>
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button class="door-btn" onclick="checkDoor(2)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="door-icon" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                            </svg>
+                            <small>Door 2</small>
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button class="door-btn" onclick="checkDoor(3)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="door-icon" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                            </svg>
+                            <small>Door 3</small>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="result" style="display: none;"></div>
+                
+                <div class="d-flex gap-2 mt-4">
+                    <a href="level5.html" class="btn btn-outline-secondary">Back</a>
+                    <a href="Level1.html" class="btn btn-dark flex-grow-1">Restart Quest</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="level6.js"></script>
+
+</body>
+</html>
